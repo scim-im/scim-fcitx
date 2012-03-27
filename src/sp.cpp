@@ -7,6 +7,7 @@
 #include "scim_fcitx_imengine.h"
 using namespace scim;
 
+#include <string.h>
 #include <stdio.h>
 #include <sys/stat.h>
 #include <limits.h>

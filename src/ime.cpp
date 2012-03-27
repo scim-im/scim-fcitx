@@ -3,6 +3,7 @@
 #define Uses_SCIM_CONFIG_BASE
 #define Uses_SCIM_CONFIG_PATH
 #include <ctype.h>
+#include <string.h>
 
 #include <scim.h>
 #include "scim_fcitx_imengine.h"
@@ -662,7 +663,7 @@ void DoPhraseTips (void)
 /*
 #define _DEBUG
 */
-void RegisterNewIM (char *strName, 
+void RegisterNewIM (const char *strName, 
 		    void (*ResetIM) (void),
 		    INPUT_RETURN_VALUE (*DoInput) (const KeyEvent&),
 		    INPUT_RETURN_VALUE (*GetCandWords) (SEARCH_MODE),
@@ -688,7 +689,7 @@ void RegisterNewIM (char *strName,
     iIMCount++;
 }
 
-Bool IsIM (char *strName)
+Bool IsIM (const char *strName)
 {
     if (strstr (im[iIMIndex].strName, strName))
 	return True;

@@ -4,7 +4,7 @@
 #include "main.h"
 
 typedef struct MH_PY {
-    char           *strMap;
+    const char      *strMap;
     int             bMode;
 } MHPY;
 

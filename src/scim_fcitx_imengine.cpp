@@ -35,6 +35,8 @@
 #define Uses_SCIM_CONFIG_BASE
 #define Uses_SCIM_CONFIG_PATH
 
+#include <string.h>
+
 #include <scim.h>
 #include "scim_fcitx_imengine.h"
 #include "main.h"
